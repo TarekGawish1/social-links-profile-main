@@ -1,0 +1,100 @@
+@font-face {
+    font-family:Inter;
+    src: url(assets/fonts/Inter-VariableFont_slnt,wght.ttf);
+}
+
+:root{
+    --green: hsl(75, 94%, 57%);
+    --white:hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 20%);
+    --darkGrey: hsl(0, 0%, 12%);
+    --offBlack: hsl(0, 0%, 8%);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--offBlack);
+    font-family: Inter;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    /* min-width: 385px; */
+    max-width: 385px;
+    height: 604px;
+    background-color: var(--darkGrey);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.avatar-image{
+    width: 88px;
+    border-radius: 50%;
+}
+
+.personal-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.personal-info > p:nth-child(1) {
+    color: var(--white);
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.personal-info > p:nth-child(2) {
+    color: var(--green);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.job-title{
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.links-widget{
+    width: 305px;
+    height: 285px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.links-widget a{
+    text-decoration: none;
+    width: 305px;
+    height: 45px;
+    background-color: var(--grey);
+    border-radius: 8px;
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.links-widget a:hover {
+    background-color: var(--green);
+    color: var(--offBlack);
+    transition: 0.3s;
+}
